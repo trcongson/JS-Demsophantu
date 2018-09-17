@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demsophantu</title>
+    <script>
+        // Hàm đếm số phần tử
+        function countElement(arr, a) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == a) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        //Hàm hiển thị các phần tử trong mảng
+        function dispArr(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i] + '-');
+                if (i % 10 == 0) {
+                    document.write("<br/>")
+                }
+            }
+        }
+
+        // Khai báo mảng và lấy ngẫu nhiên các phần tử
+        let nums = [];
+        for (let i = 0; i < 100; i++) {
+            num[1] = Math.floor(Math.random() * 101);
+        }
+
+        let e = prompt("Nhập vào một số: ");
+
+        let res = countElement(nums, parseInt(e));
+        dispArr(nums);
+        document.write("<br/>");
+        document.write("Số: " + parseInt(e) + " xuất hiện " + res + " lần. ");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
